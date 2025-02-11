@@ -34,5 +34,5 @@ stages:
       size: 4522771
     - path: transformer.joblib
       hash: md5
-      md5: c03bd7fb8e3dd5f61eddb72961cc95a7
+      md5: 58a4cc9fa2b75ce837705d70cc52ed65
       size: 193262
