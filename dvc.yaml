@@ -1,0 +1,17 @@
+stages:
+  data_cleaning:
+    cmd: python pipeline/data_cleaning.py
+    deps:
+      - data/Music Info.csv
+      - pipeline/data_cleaning.py
+    outs:
+      - data/processed/cleaned_data.csv
+  content_filtering:
+    cmd: python pipeline/content_filtering.py
+    deps:
+      - data/processed/cleaned_data.csv
+      - pipeline/content_filtering.py
+    outs:
+      - data/processed/transformed_data.npz
+      - transformer.joblib
+
