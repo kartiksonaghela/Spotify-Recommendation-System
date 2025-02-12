@@ -53,7 +53,6 @@ if st.button('Get Recommendations'):
     if (data["name"] == song_name).any():
         st.write('Recommendations for', f"**{song_name}**")
         recommendations = content_recommendation(song_name,data,transformed_data,k)
-
         # Display Recommendations
         for ind , recommendation in recommendations.iterrows():
             song_name = recommendation['name'].title()
