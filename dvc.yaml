@@ -15,3 +15,13 @@ stages:
       - data/processed/transformed_data.npz
       - transformer.joblib
 
+  collabarative_filtering:
+    cmd: python pipeline/collabrative_filtering.py
+    deps:
+      - data/UserHistory.csv
+      - data/processed/cleaned_data.csv
+      - pipeline/collabrative_filtering.py
+    outs:
+      - data/processed/collab_filtered_data.csv
+      - data/track_ids.npy
+      - data/interaction_matrix.npz
