@@ -64,3 +64,19 @@ stages:
       hash: md5
       md5: 1a83b610e7d7fb22e73b37575fe794b9
       size: 852472
+  hybrid_filtering:
+    cmd: python pipeline/transformed_hybrid_recommendation.py
+    deps:
+    - path: data/processed/collab_filtered_data.csv
+      hash: md5
+      md5: a0a00dc447525323f6da922ee7138cc0
+      size: 8259927
+    - path: pipeline/transformed_hybrid_recommendation.py
+      hash: md5
+      md5: 267284a5d13a6bf709aaaa2f961558b2
+      size: 654
+    outs:
+    - path: data/processed/transformed_hybrid_data.npz
+      hash: md5
+      md5: c1818efe01237f7d9e0f1e4d99f8146a
+      size: 2977233

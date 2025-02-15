@@ -25,3 +25,10 @@ stages:
       - data/processed/collab_filtered_data.csv
       - data/track_ids.npy
       - data/interaction_matrix.npz
+  hybrid_filtering:
+    cmd: python pipeline/transformed_hybrid_recommendation.py
+    deps:
+      - data/processed/collab_filtered_data.csv
+      - pipeline/transformed_hybrid_recommendation.py
+    outs:
+      - data/processed/transformed_hybrid_data.npz
