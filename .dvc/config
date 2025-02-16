@@ -1,4 +1,4 @@
 [core]
-    remote = myremote
-['remote "myremote"']
-    url = ../data/raw
+    remote = mynewremote
+['remote "mynewremote"']
+    url = s3://spotify-recommendation-system
