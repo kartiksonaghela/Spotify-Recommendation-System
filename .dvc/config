@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = ../Spotify-Recommendation-System/data/raw
+    url = ../data/raw
