@@ -5,6 +5,7 @@ import pandas as pd
 from numpy import load
 from sklearn.metrics.pairwise import cosine_similarity
 from pipeline.hybrid_recommendation import HybridRecommenderSystem
+#from hybrid_recommendation import HybridRecommenderSystem
 import numpy as np
 
 # load the data
