@@ -43,7 +43,7 @@ jobs:
       - name: Stop Streamlit app
         run: |
           pkill -f "streamlit run"
-            - name: Configure AWS credentials
+            
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
